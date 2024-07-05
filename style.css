@@ -134,30 +134,35 @@ footer {
 
 
 @media screen and (max-width: 500px) {
-  nav {
+  header {
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
-    align-content: space-around;
-    justify-content: space-around;
   }
-  nav > a {
-    margin: auto;
+  header > nav {
+    flex-direction: column;
+  }
+  nav > a.logo {
+    padding-bottom: 10px;
   }
   nav > a:not(:first-of-type){
     margin: auto;
-    align-self: flex-end;
   }
-  main article {
-    padding: 1.5rem;
-  }
+
   section.hero > .call-to-action {
     font-size: 1.5rem;
   }
+
+  main article {
+    padding: 15px 10px;
+  }
+
   main > article img {
     float: none;
 		display: block;
     margin: auto;
   }
+
   main > section, main > article {
     margin-bottom: 1rem;
   }
