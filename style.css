@@ -137,25 +137,28 @@ footer {
   nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
   }
   nav > a {
     margin: auto;
-    align-content: space-between;
   }
   nav > a:not(:first-of-type){
     margin: auto;
+    align-self: flex-end;
   }
   main article {
-    padding: 2rem;
+    padding: 1.5rem;
   }
   section.hero > .call-to-action {
     font-size: 1.5rem;
   }
   main > article img {
-    content: "";
-		clear: both;
+    float: none;
 		display: block;
     margin: auto;
+  }
+  main > section, main > article {
+    margin-bottom: 1rem;
   }
 }
