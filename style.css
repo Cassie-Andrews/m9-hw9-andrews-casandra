@@ -139,16 +139,14 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  nav > a.logo {
-    content: "";
-		clear: both;
-		display: block;
-  }
   nav > a {
-    justify-content: space-around;
-    margin-left: auto;
+    margin: auto;
+    align-content: space-between;
   }
   nav > a:not(:first-of-type){
     margin: auto;
+  }
+  main article {
+    padding: 2rem;
   }
 }
